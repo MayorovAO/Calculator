@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"
+  metadata-complete="true">
+
+  <display-name>Tomcat Manager Application</display-name>
+  <description>
+    A scriptable management web application for the Tomcat Web Server;
+    Manager lets you view, load/unload/etc particular web applications.
+  </description>
+
+  <servlet>
+    <servlet-name><strong>CalculateServlet</strong></servlet-name>
+    <servlet-class><strong>CalculateServlet</strong></servlet-class>
+  </servlet>
+
+  <!-- Define the Manager Servlet Mapping -->
+  <servlet-mapping>
+    <servlet-name><strong>CalculateServlet</strong></servlet-name>
+      <url-pattern>/<strong>CalculateServlet</strong></url-pattern>
+  </servlet-mapping>
+</web-app>
